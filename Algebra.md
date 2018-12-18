@@ -80,3 +80,61 @@ Here are two other examples in the book, can check there.
 
 ### Homomorphism
 
+**Homomorphism** is a structure-keeping map between two groups. 
+
+##### Definition
+
+A homomorphism is $\varphi : G \rightarrow G'$ such that for every $a,b \in G$ we have $\varphi(ab) = \varphi(a)\varphi(b)$.
+
+This definition means that this map keep the composition law of the two groups in some sense. 
+
+Then here are two important sets are defined they are image of $\varphi$ and kernel of $\varphi$.
+
+image of homomorphism is just the same definition as the image of map.
+
+kernel of a homomorphism $\varphi : G \rightarrow G'$ is a subset of $G$, whose image is $1 \in G'$. So the kernel of homomorphism has some properties. Here we need a definition called coset to describe the properties.
+
+**coset** : $aH = \{g \in G|g = ah\ for\ some\ h\in H \}$ is called a *left coset* of $H$ in $G$. 
+
+Then we can write the property like the following: 
+
+For a homomorphism $\varphi: G \rightarrow G'$ the following things are equivalent:
+
+1. $\varphi (a) = \varphi (b)$ 
+2. $a^{-1}b$ is in $K$
+3. $b$ is in the coset $aK$
+4. the coset $aK$ and $bK$ is equal.
+
+So it is obvious that the homomorphism is injective iff the kernel is trivial $\{1\}$.
+
+**normal subgroup** : a subgroup $N$ is a normal subgroup of $G$ if for every $a\in N$ and every $g \in G$, $g a {g^{-1}} \in N$. And it is obvious kernel of homomorphism is a normal subgroup of group $G$.
+
+*center* of a group is the set of elements that commute with all elements in $G$, that is $Z = \{z \in G|\forall x \in G, zx = xz\}$.
+
+Then we want to discuss some kinds of homomorphism. The first one is isomorphism.
+
+### isomorphism
+
+isomorphism is a bijective map between two groups and keep the law of composition. **Then it is obvious that the inverse of isomorphism is also isomorphism.** 
+
+When we talk about the *classifying groups*, we are talking about the isomorphic class of groups. It is very hard for us to classify all of groups. However, we can find a fact that when the order of the groups are prime number then these groups are cyclic. So prime number $p$ order groups are in one isomorphic class. 
+
+Here is a strange point, when a isomorphism points the group $G$ to itself, then it is called **automorphism**. It is obvious the identity function is an automorphism, however there is another function which is called conjugate is also an automorphism.
+
+A *conjugate* is defined by an element $g \in G$, for an element $a \in G$, its conjugation is $gag^{-1}$. This is a isomorphism to itself, because it has an inverse which is conjugation of $g^{-1}$. When the group is abelian, conjugation is the same as identity, well, they are not the same for non-commutative groups. 
+
+The pair of elements $a,b$ in a group $G$ is commute iff $aba^{-1}b^{-1} = 1$.
+
+### equivalence relations and partitions
+
+a *partition* $\Pi$ of a set $S$ is a subdivision of $S$ into non-overlapping, non-empty subsets. And $S =$ union of disjoint subsets. 
+
+An equivalence relation on a set $S$ is a relation between a pair of elements $a,b$. This kind of relation should satisfy the following 3 properties: 
+
+1. transitive: $a \sim b$ and $b \sim c$, then $a \sim c$.
+2. symmetric: $a \sim b$ then $b \sim a$.
+3. reflexive: $\forall a, a \sim a$.
+
+And we can find the congruent of triangular and the conjugacy are the equivalence relations.
+
+Here is a important fact: An equivalence relations on a set $S$ determines a partition on the set $S$, and conversely. This can be proved by carefully checking the properties of partitions, all the elements are equivalent to $a$ contained in a subset $C_{a}$. These subsets constructs a partition of $S$.
