@@ -138,3 +138,4 @@ An equivalence relation on a set $S$ is a relation between a pair of elements $a
 And we can find the congruent of triangular and the conjugacy are the equivalence relations.
 
 Here is a important fact: An equivalence relations on a set $S$ determines a partition on the set $S$, and conversely. This can be proved by carefully checking the properties of partitions, all the elements are equivalent to $a$ contained in a subset $C_{a}$. These subsets constructs a partition of $S$.
+
