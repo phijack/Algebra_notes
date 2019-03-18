@@ -137,5 +137,60 @@ An equivalence relation on a set $S$ is a relation between a pair of elements $a
 
 And we can find the congruent of triangular and the conjugacy are the equivalence relations.
 
-Here is a important fact: An equivalence relations on a set $S$ determines a partition on the set $S$, and conversely. This can be proved by carefully checking the properties of partitions, all the elements are equivalent to $a$ contained in a subset $C_{a}$. These subsets constructs a partition of $S$.
+Here is a important fact: An equivalence relations on a set $S$ determines a partition on the set $S$, and conversely. This can be proved by carefully checking the properties of partitions, all the elements are equivalent to $a$ contained in a subset $C_{a}$. These subsets constructs a partition of $S$. 
+
+Here we can build a set $\bar{S}$ whose elements are the subsets built by the equivalence relations. 
+
+##### The equivalence relations defined by a map
+
+Any map $f: S \rightarrow T$ gives an equivalence relation on its domain, which is $a \sim b \iff f(a) = f(b)$. 
+
+* The *inverse image* of the element $t$ of $T$, we should find that if the $f$ is not a bijective then there should be several elements in $S$. So $f^{-1}$ is not a map, so the inverse image of the function $f$ is called *fibres* of the map $f$.
+* Then we can go back to see the partition defined by a map. So an inverse images of an element also construct an equivalence relation. So the fibres of an homomorphism are a partition of the original group. 
+
+### Cosets
+
+Here is an subgroup $H$ of group $G$. A left coset is 
+$$
+aH = \{ah| h \in H\}
+$$
+The cosets of $H$ in $G$ are equivalence classes for congruence relations 
+$$
+b \equiv a \text{  if  }b = ah\text{  for some }h \in H
+$$
+This relation is an equivalence relation, we can prove this by verifying the three properties of equivalence relation, which are transitivity, symmetry and reflexivity.
+
+So here we know the left coset of a subgroup $H$ of group $G$ partition the group.
+
+Let $H$ be a subgroup of a group $G$, and $a,b$ are elements of the same group $G$. Then the followings are equivalent:
+
+* $b = ah$ for some $h \in H$, or, $a^{-1} b$ is an element of $H$.
+* $b$ is an element of the left coset $aH$.
+* the left cosets  $aH$ and $bH$ are equal.
+
+The number of left cosets of subgroup $H$ is called the index of $H$ in $G$. We use $[G:H]$ to denote the the index.
+
+**Theorem** All left cosets $aH$ of a subgroup $H$ of a group $G$ has the same order.
+
+So we can get the *Counting Formula*: $|G| = |H| [G:H]$.
+
+**Lagrange's Theorem** Let $H$ be a subgroup of a finite group $G$, the order of $H$ divides the order of $G$.
+
+**Corollary** The order of an element of a finite group divides the order of the group.
+
+**Corollary** Let $\varphi : G \rightarrow G'$ be a homomorphism of finite group, then we have
+
+1. $|G| = |\text{ker } \varphi|\cdot |\text{im }\varphi|$
+2. $|\text{ker } \varphi|$ divides $|G|$ and
+3. $|\text{im }\varphi|$ divides both $|G|$ and $|G'|$.
+
+##### right coset
+
+Then we will consider right coset. Here we find normal subgroup is a useful concept. If $H​$ is a normal subgroup then the left coset and right coset of it will be the same.
+
+### Modular Arithmetic 
+
+We can find that the congruent under modular relation is an equivalence relation, which means it has all of the properties of equivalence relations.  
+
+### Correspondence theorem
 
